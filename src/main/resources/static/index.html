@@ -1,0 +1,158 @@
+﻿<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <!--<meta http-equiv="X-UA-Compatible" content="IE=edge">-->
+    <meta http-equiv="X-UA-Compatible" content="text/html; charset=utf-8;"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="author" content="">
+    <meta name="keywords" content="Hotel, Gabon, Franceville, Résidence, Hauts,Menaye, chambre, suite"/>
+
+    <script src="https://www.paypalobjects.com/api/checkout.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/2.2.4/jquery.min.js"></script>
+    <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+    <script src="lib/bootstrap.min.js"></script>
+    <script src="lib/clean-blog.min.js"></script>
+
+    <!-- Main Scripts -->
+    <script src="js/core.js"></script>
+
+    <script src="js/data.js"></script>
+
+    <script src="js/utils/utils.js"></script>
+    <script src="js/utils/utils.form.js"></script>
+    <script src="js/utils/utils.reservation.js"></script>
+    <script src="js/utils/utils.template.js"></script>
+    <script src="js/utils/utils.admin.js"></script>
+
+    <script src="js/class/class.client.js"></script>
+
+    <script src="js/controller/controller.js"></script>
+    <script src="js/controller/controller.menu.js"></script>
+    <script src="js/controller/controller.includeContainer.js"></script>
+    <script src="js/controller/controller.clientSignInAndUp.js"></script>
+    <script src="js/controller/controller.clientAccount.js"></script>
+    <script src="js/controller/controller.code.js"></script>
+    <script src="js/controller/controller.room.js"></script>
+    <script src="js/controller/controller.festiveRoom.js"></script>
+    <script src="js/controller/controller.restaurant.js"></script>
+    <script src="js/controller/controller.clientListBook.js"></script>
+    <script src="js/controller/controller.article.js"></script>
+    <script src="js/controller/controller.admin.js"></script>
+    <script src="js/controller/controller.contact.js"></script>
+    <script src="js/controller/controller.galery.js"></script>
+
+    <script src="js/service/service.js"></script>
+    <script src="js/service/service.client.js"></script>
+    <script src="js/service/service.room.js"></script>
+    <script src="js/service/service.pictureRoomCategory.js"></script>
+    <script src="js/service/service.restaurant.js"></script>
+    <script src="js/service/service.festiveRoom.js"></script>
+    <script src="js/service/service.festiveRoom.services.js"></script>
+    <script src="js/service/service.newsLetter.js"></script>
+    <script src="js/service/service.article.js"></script>
+    <script src="js/service/service.book.js"></script>
+    <script src="js/service/service.book.restaurant.js"></script>
+    <script src="js/service/service.book.room.js"></script>
+    <script src="js/service/service.book.festiveRoom.js"></script>
+    <script src="js/service/service.category.js"></script>
+    <script src="js/service/service.article.js"></script>
+    <script src="js/service/service.services.js"></script>
+    <script src="js/service/service.building.js"></script>
+    <script src="js/service/service.server.js"></script>
+    <script src="js/service/service.payment.js"></script>
+    <script src="js/service/service.serviceBookedFestiveRoom.js"></script>
+    <script src="js/service/service.galery.js"></script>
+    <script src="js/service/service.invalidDateRoom.js"></script>
+    <script src="js/service/service.invalidFestiveRoomDate.js"></script>
+    <script src="js/service/service.admin.js"></script>
+
+    <script src="js/payment/payment.js"></script>
+    <script src="js/payment/payment.paypal.js"></script>
+
+
+    <!-- End -->
+    <title>Résidence des hauts de Menaye - Accueil</title>
+    <link href="css/style.css" rel="stylesheet">
+
+    <link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">
+    <!-- Bootstrap Core CSS -->
+    <link href="css/bootstrap.min.css" rel="stylesheet">
+    <!-- On rajoute le favicon -->
+    <link rel="icon" href="/img/logo/fav.png"/>
+    <!-- Custom CSS -->
+    <link href="css/clean-blog.min.css" rel="stylesheet">
+
+
+    <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
+    <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
+    <!--[if lt IE 9]>
+    <script src="https://oss.maxcdn.com/libs/html5shiv/3.7.0/html5shiv.js"></script>
+    <script src="https://oss.maxcdn.com/libs/respond.js/1.4.2/respond.min.js"></script>
+    <![endif]-->
+
+</head>
+
+<body>
+<!-- Navigation -->
+<nav class="navbar navbar-default navbar-custom navbar-fixed-top">
+    <div class="main_menu">
+        <div class="container-fluid">
+             <!-- Collect the nav links, forms, and other content for toggling -->
+
+            <div class=" navbar-collapse" id="bs-example-navbar-collapse-1">
+                <ul id="ul_menu" class="nav navbar-nav navbar-right">
+                    <li class="title_menu_main">
+                        <a id="btn_accueil" class="title_menu_main_a" href="#">Accueil</a>
+                    </li>
+
+                    <li class="title_menu_main">
+                        <a id="btn_galery" class="title_menu_main_a" href="#">Galerie</a>
+                    </li>
+
+                    <li class="title_menu_main">
+                        <a id="btn_chambre" class="title_menu_main_a" href="#">Chambres</a>
+                    </li>
+                    
+                </ul>
+            </div>
+        </div>
+        <!-- /.navbar-collapse -->
+    </div>
+    <!-- /.container -->
+</nav>
+<header id="main_header" class="intro-header" style="background-image: url('img/menu/index-bg.jpg');">
+    <div class="container" id="header_container">
+        <div class="row">
+            <div class="">
+                <div class="site-heading">
+                    <br/><br/><br/>
+
+                </div>
+            </div>
+        </div>
+    </div>
+</header>
+
+<div id="include_content" class="container">
+
+</div>
+
+<!-- Footer -->
+<footer>
+    <div class="container">
+        <div class="row">
+            <div>
+                <img src="img/logo/logoRHM.png" id="bottom_image"/>
+                <p class="copyright text-muted">Copyright &copy; Résidence des Hauts de Menaye 2016</p>
+            </div>
+        </div>
+    </div>
+</footer>
+
+
+<div id="script_current_container"></div>
+</body>
+
+</html>

@@ -1,0 +1,89 @@
+<div id="valide_container" class="valide_container"></div>
+<div id="error_container" class="error_container"></div>
+<div id="search_container" class="reservation_container panel panel-info"
+     style="vertical-align: top; min-width: 620px;">
+    <h3 style="text-align: center;color: #006483;" class="panel-heading">Réserver la salle des fêtes</h3>
+        <div class="content_left large_content">
+            <span class="title_span">Coût par jour </span>
+            </br>
+            <span class="" id="reservation_price"></span>
+        </div>
+    <div style="display:inline-block; width: 100%;color: #1A1A1A; margin-top: 30px">
+        <div class="div_reservation">
+            <div class="content_left">
+                <span class="title_span">Date de début</span>
+                </br>
+                <input class="datepicker beauty_input" type="text" id="reservation_start_date"/>
+            </div>
+        </div>
+
+        <div class="div_reservation">
+            <div class="content_left">
+                <span class="title_span">Date de fin</span>
+                </br>
+                <input class="datepicker beauty_input" type="text" id="reservation_end_date"/>
+            </div>
+        </div>
+
+    </div>
+
+    <div>
+        <div style="margin-top: 50px;">
+            <span style="font: 18px Roboto, Helvetica, Arial, sans-serif;font-weight:600; color:#01923f;">Louer des Services</span>
+        </div>
+
+        <div id="include_items"></div>
+    </div>
+
+    <div class="btn_book">
+        <a id="btn_book" class="span_book">RESERVER</a>
+    </div>
+
+</div>
+
+
+<div id="include_book" class="reservation_container panel panel-info"
+     style="display: none; vertical-align: top; min-width: 620px;">
+    <h3 class="panel-heading">Confirmer la réservation</h3>
+    <div class="flex_container">
+        <div class="div_reservation_festive">
+            <div class="content_left">
+                <span class="title_span">Date d'arrivée</span>
+                </br>
+                <label class="text_span" id="label_start_date"></label>
+            </div>
+
+        </div>
+        <div class="div_reservation_festive">
+            <div class="content_left">
+                <span class="title_span">Date de départ</span>
+                </br>
+                <label class="text_span" id="label_end_date"></label>
+            </div>
+        </div>
+        <div class="div_reservation_festive">
+            <div class="content_left">
+                <span class="title_span">Liste des services</span>
+                <div id="list_items" style="display: block; text-align: left;">
+                </div>
+            </div>
+        </div>
+        <div class="div_reservation_festive" >
+            <div class="content_left">
+                <span class="title_span">Coût de la réservation</span>
+                </br>
+                <label class="text_span" id="label_price"></label>
+            </div>
+        </div>
+    </div>
+
+    <div class="payment_container">
+        <div class="btn_book">
+            <a id="btn_return" class="span_book">RETOUR</a>
+        </div>
+        <div id="paypal-button-container" style="vertical-align: middle; height: 42px; margin: 20px 0;"></div>
+    </div>
+
+
+</div>
+

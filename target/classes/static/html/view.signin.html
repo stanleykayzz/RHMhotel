@@ -1,0 +1,229 @@
+<div id="error_container" class="error_container"></div>
+<div class="container">
+
+    <div id="loginbox" style="margin-top:0px;" class="mainbox">
+        <div class="panel panel-info" >
+            <div class="panel-heading">
+                <div class="panel-title">Se connecter</div>
+                <div style="float:right; font-size: 80%; position: relative; top:-10px"><a href="#" id="show_forgetpassword">Mot de passe oublié?</a></div>
+            </div>
+
+            <div style="padding-top:30px" class="panel-body" >
+
+                <div style="display:none" id="login-alert" class="alert alert-danger col-sm-12"></div>
+
+                <form id="loginform" class="form-horizontal" role="form">
+                    <div style="margin-bottom: 25px" class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="emailBtn" type="email" class="form-control" name="username" placeholder="email"/>
+                    </div>
+
+                    <div style="margin-bottom: 25px" class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input id="passwordBtn" type="password" class="form-control" name="password" placeholder="mot de passe"/>
+                    </div>
+
+                    <div style="margin-top:10px" class="form-group">
+                        <div class="col-sm-12 controls">
+                            <a id="btn_login" href="#" class="btn btn-success">connexion</a>
+                        </div>
+                    </div>
+
+                    <div class="form-group">
+                        <div class="col-md-12 control">
+                            <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
+                                <a id="show_signup" style="cursor: pointer;">
+                                    S'inscrire
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+
+            </div>
+        </div>
+    </div>
+
+    <div id="signupBox" style="
+    margin-top:0px; display: none;" class="mainbox ">
+        <div class="panel panel-info" >
+            <div class="panel-heading">
+                <div class="panel-title">S'inscrire</div>
+            </div>
+
+            <div style="padding-top:30px" class="panel-body" >
+
+                <form id="signupForm" class="form-horizontal" role="form">
+                    <div class="g-recaptcha" data-sitekey="6LfMazIUAAAAAHS30fm_HMUPKWqF-pVws-qjfxkC"></div>
+                    <div style="margin-bottom: 25px" class="input-group">
+                        <input id="signup_sexe_female" type="radio" name="sexe" style="display: inline-block;" />
+                        <span style="font: 16px Open Sans; display: inline-block; margin-left: 5px;">Mme</span>
+
+                        <input id="signup_sexe_male" type="radio" name="sexe" style="display: inline-block; margin-left: 20px;" />
+                        <span style="font: 16px Open Sans; display: inline-block; margin-left: 5px;">M.</span>
+                    </div>
+
+                    <div style="margin-bottom: 25px" class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="signup_name" type="text" class="form-control" name="nom" placeholder="nom"/>
+                    </div>
+
+                    <div style="margin-bottom: 25px" class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="signup_firstname" type="text" class="form-control" name="prénom" placeholder="prénom"/>
+                    </div>
+
+                    <div style="margin-bottom: 25px" class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-envelope"></i></span>
+                        <input id="signup_email" type="text" class="form-control" name="email" placeholder="email"/>
+                    </div>
+
+                    <div style="margin-bottom: 25px" class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input id="signup_password" type="password" class="form-control" name="password" placeholder="mot de passe (6 caractères minimum)"/>
+                    </div>
+
+                    <div style="margin-bottom: 25px" class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-lock"></i></span>
+                        <input id="signup_password2" type="password" class="form-control" name="password2" placeholder="confirmer le mot de passe"/>
+                    </div>
+
+                    <div style="margin-bottom: 25px" class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-calendar"></i></span>
+                        <select id="signup_date_day" class="form-control" style="width: 20%; display: inline-block; text-align: center;">
+                            <option>01</option>
+                            <option>02</option>
+                            <option>03</option>
+                            <option>04</option>
+                            <option>05</option>
+                            <option>06</option>
+                            <option>07</option>
+                            <option>08</option>
+                            <option>09</option>
+                            <option>10</option>
+                            <option>11</option>
+                            <option>12</option>
+                            <option>13</option>
+                            <option>14</option>
+                            <option>15</option>
+                            <option>16</option>
+                            <option>17</option>
+                            <option>18</option>
+                            <option>19</option>
+                            <option>20</option>
+                            <option>21</option>
+                            <option>22</option>
+                            <option>23</option>
+                            <option>24</option>
+                            <option>25</option>
+                            <option>26</option>
+                            <option>27</option>
+                            <option>28</option>
+                            <option>29</option>
+                            <option>30</option>
+                            <option>31</option>
+                        </select>
+                        <select id="signup_date_month" class="form-control" style="width: 40%; display: inline-block; text-align: center;">
+                            <option name="01">Janvier</option>
+                            <option name="02">Février</option>
+                            <option name="03">Mars</option>
+                            <option name="04">Avril</option>
+                            <option name="05">Mai</option>
+                            <option name="06">Juin</option>
+                            <option name="07">Juillet</option>
+                            <option name="08">Août</option>
+                            <option name="09">Septembre</option>
+                            <option name="10">Octobre</option>
+                            <option name="11">Novembre</option>
+                            <option name="12">Décembre</option>
+                        </select>
+                        <select id="signup_date_year" class="form-control" style="width: 33.4%; display: inline-block; text-align: center;">
+                        </select>
+                        <!--<input id="signup_date_day" type="number" min="1" max="31" style="width: 33.3%; display: inline-block; text-align: center;" class="form-control" name="date" placeholder="jour"/>
+                        <input id="signup_date_month" type="number" min="1" max="12" style="width: 33.3%; display: inline-block; text-align: center;"class="form-control" name="date" placeholder="mois"/>
+                        <input id="signup_date_year" type="number" min="1900" style="width: 33.4%; display: inline-block; text-align: center;"class="form-control" name="date" placeholder="année"/>-->
+                    </div>
+
+                    <div style="margin-bottom: 25px" class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-phone"></i></span>
+                        <input id="signup_phone" type="text" class="form-control" name="phone" placeholder="téléphone"/>
+                    </div>
+
+                    <div style="margin-bottom: 25px" class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+                        <input id="signup_country" type="text" class="form-control" name="country" placeholder="pays"/>
+                    </div>
+
+                    <div style="margin-bottom: 25px" class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+                        <input id="signup_city" type="text" class="form-control" name="city" placeholder="ville"/>
+                    </div>
+
+                    <div style="margin-bottom: 25px" class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-globe"></i></span>
+                        <input id="signup_address" type="text" class="form-control" name="address" placeholder="adresse"/>
+                    </div>
+
+                    <div style="margin-bottom: 25px" class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-send"></i></span>
+                        <input id="signup_postalcode" type="text" class="form-control" name="postalcode" placeholder="code postal"/>
+                    </div>
+
+                    <div style="margin-top:10px" class="form-group">
+                        <div class="col-sm-12 controls">
+                            <a id="btn_signup" href="#" class="btn btn-success">Inscription</a>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <div class="col-md-12 control">
+                            <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
+                                <a id="show_login" style="cursor: pointer;">
+                                    Se connecter
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+    <div id="forgetpasswordBox" style="margin-top:0px; display: none;" class="">
+        <div class="panel panel-info" >
+            <div class="panel-heading">
+                <div class="panel-title">Mot de passe oublié</div>
+            </div>
+
+            <div style="padding-top:30px" class="panel-body" >
+
+                <form id="forgetpasswordForm" class="form-horizontal" role="form">
+
+                    <div style="margin-bottom: 25px" class="input-group">
+                        <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
+                        <input id="forgetpassword_email" type="text" class="form-control" name="username" placeholder="email"/>
+                    </div>
+
+                    <div style="margin-top:10px" class="form-group">
+                        <div class="col-sm-12 controls">
+                            <a id="btn_sendforgetpassword" href="#" class="btn btn-success">envoyer</a>
+                        </div>
+                    </div>
+
+
+                    <div class="form-group">
+                        <div class="col-md-12 control">
+                            <div style="border-top: 1px solid#888; padding-top:15px; font-size:85%" >
+                                <a id="forgetpassword_show_login" style="cursor: pointer;">
+                                    Se connecter
+                                </a>
+                            </div>
+                        </div>
+                    </div>
+                </form>
+            </div>
+        </div>
+    </div>
+
+</div>

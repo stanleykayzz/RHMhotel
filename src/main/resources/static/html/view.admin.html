@@ -1,0 +1,652 @@
+<div id="valide_container" class="valide_container"></div>
+<div id="error_container" class="error_container"></div>
+<div class="panel panel-admin-main" style="">
+    <div class="template_container_div_admin">
+
+        <div class="panel panel-admin">
+            <div class="title_container_admin">
+                <h3>Réservations</h3>
+            </div>
+
+            <ul class="title_pan t_span_admin">
+                <li class="li_menu_admin" id="btn_client"><span class="span_menu_admin">Client</span></li>
+                <li class="li_menu_admin" id="btn_book_room_menu"><span class="span_menu_admin">Chambre</span></li>
+                <li class="li_menu_admin" id="btn_book_restaurant_menu"><span class="span_menu_admin">Restaurant</span>
+                </li>
+                <li class="li_menu_admin" id="btn_book_festiveRoom_menu"><span
+                        class="span_menu_admin">Salle des fêtes</span></li>
+            </ul>
+            <div id="list_book_container" class="list_container_class">
+                <div id="client_container" class="panel_admin_container">
+                    <div id="header_list_client" class="admin_rows">
+                    </div>
+                    <div id="body_list_client" class="admin_rows body_admin">
+
+                    </div>
+                    <div id="list_client_tools" class="tools_admin">
+                        <div class="btn_book_admin">
+                            <a id="btn_list_client_search" class="span_book">TRIER</a>
+                        </div>
+                        <input id="inpt_list_client_search" type="text"
+                               class="beauty_input input_admin long_input_admin">
+                    </div>
+                </div>
+                <div id="book_room_container" class="panel_admin_container">
+                    <div class="tools_admin">
+                        <div class="medium_content">
+                            <div class="sub_menu_tool">Réservations actives</div>
+                            <div id="header_list_room_book" class="book_cell_title"
+                                 style="margin-top: 2px; border-right: 1px solid white">
+                            </div>
+                            <div id="body_list_room_book" class="admin_rows body_admin">
+
+                            </div>
+                            <div class="tools_admin">
+                                <div class="btn_book_admin" id="btn_list_room_book_search" style="flex: 1;">
+                                    <a class="span_book">TRIER</a>
+                                </div>
+                                <input id="inpt_list_room_book_search" style="flex: 1;" type="text"
+                                       class="beauty_input input_admin long_input_admin">
+                            </div>
+
+                        </div>
+                        <div class="medium_content">
+                            <div class="sub_menu_tool">Réservations terminées</div>
+                            <div id="header_list_room_book_hold" style="margin-top: 2px;" class="book_cell_title">
+                            </div>
+                            <div id="body_list_room_book_hold" class="admin_rows body_admin">
+
+                            </div>
+                            <div class="tools_admin">
+                                <div id="btn_list_room_book_hold_search" class="btn_book_admin" style="flex: 1;">
+                                    <a class="span_book">TRIER</a>
+                                </div>
+                                <input id="inpt_list_room_book_hold_search" style="flex: 1;" type="text"
+                                       class="beauty_input input_admin long_input_admin">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+                <div id="book_restaurant_container" class="panel_admin_container">
+                    <div id="header_list_restaurant_book" class="admin_rows">
+                    </div>
+                    <div id="body_list_restaurant_book" class="admin_rows body_admin">
+                    </div>
+
+                    <div id="list_restaurant_book_tools" class="tools_admin">
+                        <div class="btn_book_admin">
+                            <a id="btn_list_restaurant_book_search" class="span_book">TRIER</a>
+                        </div>
+                        <input id="inpt_list_restaurant_book_search" type="text"
+                               class="beauty_input input_admin long_input_admin">
+                    </div>
+                </div>
+
+                <div id="book_festiveRoom_container" class="panel_admin_container">
+                    <div class="tools_admin">
+                        <div class="medium_content">
+                            <div class="sub_menu_tool">Salle des fêtes</div>
+                            <div id="header_list_festiveroom_book" class="book_cell_title"
+                                 style="margin-top: 2px; border-right: 1px solid white">
+                            </div>
+                            <div id="body_list_festiveroom_book" class="admin_rows body_admin">
+
+                            </div>
+                            <div class="tools_admin">
+                                <div class="btn_book_admin" id="btn_list_festiveroom_book_search" style="flex: 1;">
+                                    <a class="span_book">TRIER</a>
+                                </div>
+                                <input id="inpt_list_festiveroom_book_search" style="flex: 1;" type="text"
+                                       class="beauty_input input_admin long_input_admin">
+                            </div>
+                        </div>
+                        <div class="medium_content">
+                            <div class="sub_menu_tool">Services</div>
+                            <div id="header_list_festiveroom_book_service" style="margin-top: 2px;"
+                                 class="book_cell_title">
+                            </div>
+                            <div id="body_list_festiveroom_book_service" class="admin_rows body_admin">
+
+                            </div>
+                            <div class="tools_admin">
+                                <div id="btn_list_festiveroom_book_service_search" class="btn_book_admin"
+                                     style="flex: 1;">
+                                    <a class="span_book">TRIER</a>
+                                </div>
+                                <input id="inpt_list_festiveroom_book_service_search" style="flex: 1;" type="text"
+                                       class="beauty_input input_admin long_input_admin">
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+        <div class="panel panel-admin" style="margin-top: 50px;">
+            <div class="title_container_admin">
+                <h3>Structure</h3>
+            </div>
+            <ul class="title_pan t_span_admin">
+                <li class="li_menu_admin" id="btn_building_menu"><span class="span_menu_admin">Batiment</span></li>
+                <li class="li_menu_admin" id="btn_room_menu"><span class="span_menu_admin">Chambre</span></li>
+                <li class="li_menu_admin" id="btn_restaurant_menu"><span class="span_menu_admin">Restaurant</span></li>
+                <li class="li_menu_admin" id="btn_festiveRoom_menu"><span class="span_menu_admin">Salle des fêtes</span>
+                </li>
+            </ul>
+
+            <div id="list_structure_container" class="list_container_class">
+                <div id="building_container" class="panel_admin_container">
+                    <div class="medium_container">
+                        <div class="medium_content" style="height: 350px;">
+                            <div class="sub_menu_tool">Batiment</div>
+                            <div class="tools_admin">
+                                <input id="inpt_addBuilding" type="text" placeholder="Nom du Batiment"
+                                       class="beauty_input input_admin medium_content">
+                            </div>
+
+                            <div class="tools_admin">
+                                <div id="btn_addBuilding" class="btn_book_admin medium_content">
+                                    <a class="span_book no-select">AJOUTER</a>
+                                </div>
+                            </div>
+
+                            <div class="tools_admin" style="margin-top: 7px">
+
+                                <select id="slct_UudateBuilding" type="text"
+                                        class="beauty_input input_admin medium_content">
+                                    <option></option>
+                                </select>
+                                <input id="inpt_updateBuilding" type="text" placeholder="Nouveau nom"
+                                       class="beauty_input input_admin medium_content">
+                            </div>
+                            <div class="tools_admin">
+                                <div id="btn_updateBuilding" class="btn_update_admin" style="flex: 1;">
+                                    <a class="span_book no-select">MODIFIER</a>
+                                </div>
+                            </div>
+
+                            <div class="tools_admin" style="margin-top: 7px">
+                                <select id="slct_removeBuilding" class="beauty_input input_admin medium_content">
+                                    <option></option>
+                                </select>
+                            </div>
+                            <div class="tools_admin">
+                                <div id="btn_removeBuilding" class="btn_delete_admin medium_content">
+                                    <a class="span_book no-select">SUPPRIMER</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="medium_content">
+                            <div id="header_list_building" class="admin_rows">
+                            </div>
+                            <div id="body_list_building" class="admin_rows body_admin">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+
+                <div id="room_container" class="panel_admin_container">
+                    <div class="medium_container" style="height: 381px;">
+                        <div class="medium_content">
+                            <div class="sub_menu_tool">Chambres</div>
+                            <div class="tools_admin">
+                                <input id="inpt_addNumberRoom" type="text" placeholder="Numéro de chambre"
+                                       class="beauty_input input_admin medium_content">
+
+                                <select id="slct_addCategoryRoom" type="text"
+                                        class="beauty_input input_admin medium_content">
+                                    <option></option>
+                                </select>
+
+                                <select id="slct_addBuildingRoom" type="text"
+                                        class="beauty_input input_admin medium_content">
+                                    <option></option>
+                                </select>
+                            </div>
+
+                            <div class="tools_admin">
+                                <div id="btn_addRoom" class="btn_book_admin medium_content">
+                                    <a class="span_book no-select">AJOUTER</a>
+                                </div>
+                            </div>
+
+                            <div class="tools_admin" style="margin-top: 26px">
+
+                                <select id="slct_updtRoomId" type="text"
+                                        class="beauty_input input_admin medium_content">
+                                    <option></option>
+                                </select>
+
+                                <select id="slct_updtRoomCategory" type="text"
+                                        class="beauty_input input_admin medium_content">
+                                    <option></option>
+                                </select>
+
+                                <select id="slct_updtRoomBuilding" type="text"
+                                        class="beauty_input input_admin medium_content">
+                                    <option></option>
+                                </select>
+
+                                <input id="inpt_updtNumberRoom" type="text" placeholder="Numéro de chambre"
+                                       class="beauty_input input_admin medium_content">
+                            </div>
+                            <div class="tools_admin">
+                                <div id="btn_updateRoom" class="btn_update_admin" style="flex: 1;">
+                                    <a class="span_book no-select">MODIFIER</a>
+                                </div>
+                            </div>
+
+                            <div class="tools_admin" style="margin-top: 26px">
+                                <select id="slct_removeRoom" class="beauty_input input_admin medium_content">
+                                    <option></option>
+                                </select>
+                            </div>
+                            <div class="tools_admin">
+                                <div id="btn_removeRoom" class="btn_delete_admin medium_content">
+                                    <a class="span_book no-select">SUPPRIMER</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="medium_content">
+                            <div id="header_list_room" class="admin_rows">
+                            </div>
+                            <div id="body_list_room" class="admin_rows body_admin">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="medium_container" style="margin-top: 10px; height: 350px;">
+                        <div class="medium_content" style="height: 350px;">
+                            <div class="sub_menu_tool">Catégories</div>
+                            <div class="tools_admin">
+                                <input id="inpt_addCategoryName" type="text" placeholder="Nom"
+                                       class="beauty_input input_admin medium_content">
+
+                                <input id="inpt_addCategoryPrice" type="number" min="0" placeholder="Prix"
+                                       class="beauty_input input_admin medium_content">
+
+                            </div>
+
+                            <div class="tools_admin">
+                                <div id="btn_addCategory" class="btn_book_admin medium_content">
+                                    <a class="span_book no-select">AJOUTER</a>
+                                </div>
+                                <form class="form_picture" enctype="multipart/form-data" method="POST"
+                                      id="formDataCategory">
+                                    <input class="beauty_input input_picture" type="file" name="file" required/>
+                                </form>
+                            </div>
+
+                            <div class="tools_admin" style="margin-top: 28px">
+                                <select id="slct_updtCategoryId" type="text"
+                                        class="beauty_input input_admin medium_content">
+                                    <option></option>
+                                </select>
+
+                                <input id="inpt_updtCategoryName" type="text" placeholder="Nom"
+                                       class="beauty_input input_admin medium_content">
+
+                                <input id="inpt_updtCategoryPrice" type="number" min="0" placeholder="Prix"
+                                       class="beauty_input input_admin medium_content">
+                            </div>
+                            <div class="tools_admin">
+                                <div id="btn_updateCategory" class="btn_update_admin" style="flex: 1;">
+                                    <a class="span_book no-select">MODIFIER</a>
+                                </div>
+                                <form class="form_picture" enctype="multipart/form-data" method="PUT"
+                                      id="formDataUpdateCategory">
+                                    <input id="update_picture_galery" class="beauty_input input_picture" type="file"
+                                           name="file" required/>
+                                </form>
+                            </div>
+
+                            <div class="tools_admin" style="margin-top: 28px">
+                                <select id="slct_removeCategory" class="beauty_input input_admin medium_content">
+                                    <option></option>
+                                </select>
+                            </div>
+                            <div class="tools_admin">
+                                <div id="btn_removeCategory" class="btn_delete_admin medium_content">
+                                    <a class="span_book no-select">SUPPRIMER</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="medium_content">
+                            <div id="header_list_category" class="admin_rows">
+                            </div>
+                            <div id="body_list_category" class="admin_rows body_admin">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="medium_container" style="margin-top: 45px;">
+                        <div class="medium_content" style="height: 350px;">
+                            <div class="sub_menu_tool">Chambre indisponible</div>
+                            <div class="tools_admin">
+                                <select id="slct_addInvalidaRoomID" type="text"
+                                        class="beauty_input input_admin medium_content">
+                                    <option></option>
+                                </select>
+                                <input id="date_invalidStart" type="text" placeholder="Début"
+                                       class="beauty_input input_admin medium_content">
+
+                                <input id="date_invalidEnd" type="text" min="0" placeholder="Fin"
+                                       class="beauty_input input_admin medium_content">
+                            </div>
+
+                            <div class="tools_admin">
+                                <div id="btn_addInvalideRoom" class="btn_book_admin medium_content">
+                                    <a class="span_book no-select">AJOUTER</a>
+                                </div>
+                            </div>
+
+                            <div class="tools_admin" style="margin-top: 10px">
+                                <select id="slct_removeInvalideRoomID" class="beauty_input input_admin medium_content">
+                                    <option></option>
+                                </select>
+                            </div>
+                            <div class="tools_admin">
+                                <div id="btn_removeInvalideRoom" class="btn_delete_admin medium_content">
+                                    <a class="span_book no-select">SUPPRIMER</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="medium_content">
+                            <div id="header_list_invalid" class="admin_rows">
+                            </div>
+                            <div id="body_list_invalid" class="admin_rows body_admin">
+
+                            </div>
+                        </div>
+                    </div>
+
+                </div>
+
+
+                <div id="restaurant_container" class="panel_admin_container">
+                    <div class="medium_container">
+                        <div class="medium_content" style="height: 350px;">
+                            <div class="sub_menu_tool">Restaurant</div>
+                            <div class="tools_admin">
+                                <input id="inpt_addNumberRestaurant" type="text" placeholder="Numéro de table"
+                                       class="beauty_input input_admin medium_content">
+
+                                <input id="inpt_addRestaurant" type="text" placeholder="Nombre de places"
+                                       class="beauty_input input_admin medium_content">
+                            </div>
+
+                            <div class="tools_admin">
+                                <div id="btn_addRestaurant" class="btn_book_admin medium_content">
+                                    <a class="span_book no-select">AJOUTER</a>
+                                </div>
+                            </div>
+
+                            <div class="tools_admin" style="margin-top: 7px">
+
+                                <select id="slct_updateRestaurant" type="text"
+                                        class="beauty_input input_admin medium_content">
+                                    <option></option>
+                                </select>
+                                <input id="inpt_updateRestaurant" type="text" placeholder="Nombre de places"
+                                       class="beauty_input input_admin medium_content">
+                            </div>
+                            <div class="tools_admin">
+                                <div id="btn_updateRestaurant" class="btn_update_admin" style="flex: 1;">
+                                    <a class="span_book no-select">MODIFIER</a>
+                                </div>
+                            </div>
+
+                            <div class="tools_admin" style="margin-top: 7px">
+                                <select id="slct_removeRestaurant" class="beauty_input input_admin medium_content">
+                                    <option></option>
+                                </select>
+                            </div>
+                            <div class="tools_admin">
+                                <div id="btn_removeRestaurant" class="btn_delete_admin medium_content">
+                                    <a class="span_book no-select">SUPPRIMER</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="medium_content">
+                            <div id="header_list_Restaurant" class="admin_rows">
+                            </div>
+                            <div id="body_list_Restaurant" class="admin_rows body_admin">
+
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div id="festiveRoom_container" class="panel_admin_container">
+                    <div class="medium_container">
+                        <div class="medium_content">
+                            <div class="sub_menu_tool">Salle des fêtes</div>
+                            <div class="tools_admin" style="margin-top: 0px">
+                                <input id="slct_updtFestiveRoomPrice" type="number" min="0" placeholder="Prix"
+                                       class="beauty_input input_admin medium_content">
+
+                            </div>
+                            <div class="tools_admin">
+                                <div id="btn_updateFestiveRoom" class="btn_update_admin" style="flex: 1;">
+                                    <a class="span_book no-select">MODIFIER</a>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="medium_content">
+                            <div id="header_list_festiveRoom" class="admin_rows">
+                            </div>
+                            <div id="body_list_festiveRoom" class="admin_rows body_admin">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="medium_container" style="margin-top: 0px; height: 350px;">
+                        <div class="medium_content" style="height: 350px;">
+                            <div class="sub_menu_tool">Service</div>
+                            <div class="tools_admin">
+                                <input id="inpt_addServiceName" type="text" placeholder="Nom"
+                                       class="beauty_input input_admin medium_content">
+
+                                <input id="inpt_addServicePrice" type="text" min="0" placeholder="Prix"
+                                       class="beauty_input input_admin medium_content">
+
+                                <input id="inpt_addServiceQuantity" type="number" min="0" placeholder="Quantité"
+                                       class="beauty_input input_admin medium_content">
+                            </div>
+
+                            <div class="tools_admin">
+                                <div id="btn_addService" class="btn_book_admin medium_content">
+                                    <a class="span_book no-select">AJOUTER</a>
+                                </div>
+                            </div>
+
+                            <div class="tools_admin" style="margin-top: 28px">
+
+                                <select id="slct_updtServiceId" type="text"
+                                        class="beauty_input input_admin medium_content">
+                                    <option></option>
+                                </select>
+
+                                <input id="inpt_updtServiceName" type="text" placeholder="Nom"
+                                       class="beauty_input input_admin medium_content">
+
+                                <input id="inpt_updtServicePrice" type="number" min="0" placeholder="Prix"
+                                       class="beauty_input input_admin medium_content">
+
+                                <input id="inpt_updtServiceQuantity" type="number" min="0" placeholder="Quantité"
+                                       class="beauty_input input_admin medium_content">
+                            </div>
+                            <div class="tools_admin">
+                                <div id="btn_updateService" class="btn_update_admin" style="flex: 1;">
+                                    <a class="span_book no-select">MODIFIER</a>
+                                </div>
+                            </div>
+
+                            <div class="tools_admin" style="margin-top: 28px">
+                                <select id="slct_removeService" class="beauty_input input_admin medium_content">
+                                    <option></option>
+                                </select>
+                            </div>
+                            <div class="tools_admin">
+                                <div id="btn_removeService" class="btn_delete_admin medium_content">
+                                    <a class="span_book no-select">SUPPRIMER</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="medium_content">
+                            <div id="header_list_service" class="admin_rows">
+                            </div>
+                            <div id="body_list_service" class="admin_rows body_admin">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="medium_container" style="margin-top: 45px;">
+                        <div class="medium_content" style="height: 350px;">
+                            <div class="sub_menu_tool">Salle des fêtes indisponible</div>
+                            <div class="tools_admin">
+                                <input id="date_invalidFestiveStart" type="text" placeholder="Début"
+                                       class="beauty_input input_admin medium_content">
+
+                                <input id="date_invalidFestiveEnd" type="text" min="0" placeholder="Fin"
+                                       class="beauty_input input_admin medium_content">
+                            </div>
+
+                            <div class="tools_admin">
+                                <div id="btn_addInvalideFestiveRoom" class="btn_book_admin medium_content">
+                                    <a class="span_book no-select">AJOUTER</a>
+                                </div>
+                            </div>
+
+                            <div class="tools_admin" style="margin-top: 28px">
+                                <select id="slct_removeInvalideFestiveRoomID"
+                                        class="beauty_input input_admin medium_content">
+                                    <option></option>
+                                </select>
+                            </div>
+                            <div class="tools_admin">
+                                <div id="btn_removeInvalideFestiveRoom" class="btn_delete_admin medium_content">
+                                    <a class="span_book no-select">SUPPRIMER</a>
+                                </div>
+                            </div>
+
+                        </div>
+                        <div class="medium_content">
+                            <div id="header_list_invalidFestive" class="admin_rows">
+                            </div>
+                            <div id="body_list_invalidFestive" class="admin_rows body_admin">
+
+                            </div>
+                        </div>
+                    </div>
+
+                    <div id="header_festiveRoom" class="admin_rows">
+                    </div>
+                    <div id="body_festiveRoom" class="admin_rows body_admin">
+
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="panel panel-admin" style="margin-top: 50px;">
+            <div class="title_container_admin">
+                <h3>Contenu</h3>
+            </div>
+            <ul class="title_pan t_span_admin">
+                <li class="li_menu_admin" id="btn_article_menu"><span class="span_menu_admin">Article</span></li>
+                <li class="li_menu_admin" id="btn_galery_menu"><span class="span_menu_admin">Galerie</span></li>
+                <li class="li_menu_admin" id="btn_newsLetter_menu"><span class="span_menu_admin">News Letter</span></li>
+            </ul>
+
+            <div id="list_content_container" class="list_container_class">
+                <div id="article_container" class="panel_admin_container" style="width:100%;">
+
+                    <div style="display: flex; flex-wrap: wrap;">
+
+                        <div class="sub_menu_tool">Ajouter un article</div>
+
+                        <input id="add_article_title" type="text" placeholder="Titre"
+                               class="beauty_input title_article_admin">
+                                    <textarea id="add_article_content" type="text"
+                                              class="beauty_input content_article_admin"></textarea>
+
+
+                        <form class="form_picture" enctype="multipart/form-data" method="POST"
+                              id="formDataArticle">
+                            <input class="beauty_input input_picture" type="file" name="file" required/>
+                        </form>
+
+                        <div class="btn_book_admin" id="btn_create_article" style="flex: 1;">AJOUTER</div>
+
+                    </div>
+                    <div style="display: flex; flex-wrap: wrap;">
+
+                        <div class="sub_menu_tool">Modifier un article</div>
+                        <input id="updt_article_title" type="text" placeholder="Titre"
+                               class="beauty_input title_article_admin">
+
+                        <textarea id="updt_article_content" class="content_article_admin" type="text"></textarea>
+                        <select id="slct_updt_article" class="beauty_input input_admin medium_content">
+                            <option></option>
+                        </select>
+
+                        <div class="btn_update_admin" id="btn_updt_article" style="flex: 1;">MODIFIER</div>
+                        <div class="btn_delete_admin" id="btn_delete_article" style="flex: 1;">DELETE</div>
+                    </div>
+
+                </div>
+
+                <div id="galery_container" class="panel_admin_container">
+                    <div style="display: flex; flex-wrap:wrap">
+
+                        <div style="flex: 1; display: flex; height:50px;">
+                            <form style="flex: 1;" class="form_picture" enctype="multipart/form-data" method="POST"
+                                  id="formDataGalery">
+                                <input id="inptGalery" class="beauty_input input_picture" type="file" name="file" required/>
+                            </form>
+                            <div class="btn_book_admin" id="btn_addGalery" style="flex: 1;">ENVOYER</div>
+                        </div>
+                        <div style="flex: 1; display: flex;">
+                            <select id="slct_removeGalery" class="beauty_input input_admin medium_content">
+                                <option></option>
+                            </select>
+                            <div class="btn_delete_admin" id="btn_removePicture" style="flex: 1;">SUPPRIMER</div>
+                        </div>
+
+                        <div style="display: inline-block; width: 100%;">
+                            <img src="" id="imageGalery">
+                        </div>
+
+                    </div>
+
+                </div>
+                <div id="newsLetter_container" class="panel_admin_container">
+                    <div style="width: 600px; height: 220px; margin: auto; margin-top: 20px;">
+                        <input id="titleNews" type="text" placeholder="Sujet"
+                               style="text-align:center; width: 100%; margin: auto; display: inline-block; border: 0; border-bottom: 1px solid gainsboro;">
+
+                        <textarea id="contentNews" placeholder="Message"
+                                  style="width: 100%; height: 100%; margin-top: 20px; border: 1px solid gainsboro;"></textarea>
+                        <div class="btn_book_admin" id="btn_news" style="flex: 1;">ENVOYER</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+
+

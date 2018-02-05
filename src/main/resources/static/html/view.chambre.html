@@ -1,0 +1,97 @@
+﻿<div id="error_container" class="error_container"></div>
+<div id="search_container" class="reservation_container panel panel-info">
+    <h3 style="text-align: center;" class="panel-heading">Réservation de chambre</h3>
+    <div class="reservation_content_container">
+        <div class="div_reservation">
+            <div class="content_left">
+                <span class="title_span">Date d'arrivée</span>
+                </br>
+                <input class="datepicker beauty_input" type="text" id="reservation_start_date"/>
+            </div>
+        </div>
+
+        <div class="div_reservation">
+            <div class="content_left">
+                <span class="title_span">Date de départ</span>
+                </br>
+                <input class="datepicker beauty_input" type="text" id="reservation_end_date"/>
+            </div>
+        </div>
+
+        <div class="div_reservation">
+            <div class="content_left">
+                <span class="title_span">Type de séjour :</span>
+                </br>
+                <select id="reservation_reason" class="beauty_input"
+                        style="color:#474747;font-weight: 600; margin-top: 10px; height: 25px; line-height: 25px;">
+                    <option value="0" style="color:#474747;font-weight: 500;" name="vacances"vacances>Vacances</option>
+                    <option value="1" style="color:#474747;font-weight: 500;" name="professionnel">Professionnel</option>
+                </select>
+            </div>
+        </div>
+
+        <div class="div_reservation">
+            <a class="btn_form" id="btn_search">RECHERCHE</a>
+        </div>
+    </div>
+
+    <div id="include_room" style="margin-top: 20px;display: inline-block;width: 100%; text-align: center; margin-left: auto; margin-right: auto;">
+    </div>
+    <div id="include_reservation_list" style="display: none;height: auto;position: relative;border: 1px;/* text-align: center; */justify-content: center;">
+
+            <div class="content_left" style="display: inline-block;	margin-top: 20px;	padding-left: 20px;	width: 40%;	min-width: 300px;">
+                <span class="title_span">Liste des réservations </span>
+                <div style="display: block;text-align: left;padding: 10px 0;" id="list_reservation">
+
+                </div>
+            </div>
+
+
+        <div class="div_reservation" style="    display: inline-flex; flex-direction: column; justify-content: center; padding: 0 10%; margin-top: 20px; padding-left: calc(20px + 10%);  width: 40%;  min-width: 300px;">
+            <a class="btn_form" id="btn_book">RESERVER</a>
+        </div>
+    </div>
+</div>
+
+<div id="include_reservation"class="reservation_container panel panel-info" style="display: none;">
+    <h3 style="text-align: center;"class="panel-heading">Confirmer la réservation</h3>
+    <div style="display: block; margin-left: 50px; padding-bottom: 20px;">
+        <div class="div_reservation">
+            <div class="content_left">
+                <span class="title_span">Date d'arrivée</span>
+                </br>
+                <label class="text_span" id="label_start_date"></label>
+            </div>
+
+        </div>
+        <div class="div_reservation">
+            <div class="content_left">
+                <span style="margin-left: 40px;" class="title_span">Date de départ</span>
+                </br>
+                <label style="margin-left: 40px;" class="text_span" id="label_end_date"></label>
+            </div>
+        </div>
+
+
+        <div class="div_reservation">
+            <div class="content_left">
+                <span class="title_span">Réservation(s)</span>
+                </br>
+                <label class="text_span" id="labelBook"></label>
+            </div>
+        </div>
+        <div class="div_reservation">
+            <div class="content_left">
+                <span style="margin-left: 40px;" class="title_span">Coût du séjour</span>
+                </br>
+                <label style="margin-left: 40px;" class="text_span" id="label_price"></label>
+            </div>
+        </div>
+
+        <div class="payment_container">
+            <a class="btn_form" id="btn_return">RETOUR</a>
+            <div id="paypal-button-container"></div>
+        </div>
+
+    </div>
+</div>
